@@ -2,7 +2,10 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
+
 function Header() {
+  
+
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -17,6 +20,9 @@ function Header() {
             </LinkContainer>
             <LinkContainer to="/login">
               <Nav.Link>Login</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/kittens">
+              <Nav.Link>Kittens</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

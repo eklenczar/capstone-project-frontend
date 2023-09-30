@@ -22,6 +22,9 @@ const kittensSlice = createSlice({
       const kitten = state.entities.find((kitten) => kitten.id === action.payload.id);
       kitten = {...kitten, ...action.payload};
     },
+    kittenDeleted(state, action) {
+        const kitten = state.entities.filter((kitten) => kitten.id !== action.payload.id);
+      },
   },
   extraReducers: {
     // handle async actions: pending, fulfilled, rejected (for errors)
